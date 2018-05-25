@@ -1,0 +1,6 @@
+<h1>Restaurants</h1>
+<% @restaurants.each do |restaurant| %>
+  <h2><%= restaurant.title %></h2>
+  <%= link_to 'View', restaurant_path(path) %>
+  <a href='/restaurants/1'>Show Restaurant</a>
+<% end %>
